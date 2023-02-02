@@ -1,5 +1,5 @@
 {
-  "podcast" : {
+  "Podcast" : {
     "id": {
       "int" : {
         "min" : 0,
