@@ -1,0 +1,77 @@
+{
+  "Podcast" : {
+    "id": {
+      "int" : {
+        "min" : 0,
+        "max" : 400
+      }
+    },
+    "title" : {
+      "loremWord" : {}
+    },
+    "artist" : {
+      "loremWord" : {}
+    },
+    "description" : {
+      "loremWords" : {
+          "minLength" : 5,
+          "maxLength" : 20,
+        }
+    },
+    "thumbnailUrl" : {
+      "string" : {
+        "https://img.youtube.com/vi/ycOBZZeVeAc/default.jpg",
+        "https://img.youtube.com/vi/qECVwCcGkD8/default.jpg",
+        "https://img.youtube.com/vi/ezbsbkqoRrs/default.jpg",
+        "https://img.youtube.com/vi/c7tOAGY59uQ/default.jpg",
+        "https://img.youtube.com/vi/OPf0YbXqDm0/default.jpg",
+        "https://img.youtube.com/vi/9bZkp7q19f0/default.jpg"
+      }
+    },
+    "coverArtUrl" : {
+      "string" : {
+        "https://images.fanart.tv/fanart/1989-5402d87daa689.jpg",
+        "https://images.fanart.tv/fanart/anti-5654feec7bdc0.jpg",
+        "https://images.fanart.tv/fanart/444-5973fdd4999b8.jpg",
+      }
+    },
+    "sources" : {
+      "name" : {
+        "string" : {
+          "Apple",
+          "Spotify",
+          "Youtube",
+        }
+      },
+      "url" : {
+        "regexp" : "https://open.spotify.com/show/[0-9a-zA-Z]{22}"
+      }
+    },
+    "reviews" : {
+      "id": {
+        "int" : {
+          "min" : 0,
+          "max" : 20
+        }
+      },
+      "name" : {
+        "loremWords" : {}
+      },
+      "review" : {
+        "loremSentences" : {
+          "minLength" : 1,
+          "maxLength" : 3,
+        }
+      },
+      "rating: {
+        "int" : {
+          "min": 0,
+          "max": 100,
+        }
+      },
+      "date" : {
+        "regexp" : "^((0|1)\d{1})\/((0|1|2)\d{1})\/((19|20)\d{2})"
+      }
+    }
+  }
+}
