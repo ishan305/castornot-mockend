@@ -69,8 +69,8 @@
     },
     "review" : {
       "loremSentences" : {
-        "minLength" : 1,
-        "maxLength" : 3
+        "minLength" : 50,
+        "maxLength" : 200
       }
     },
     "rating": {
