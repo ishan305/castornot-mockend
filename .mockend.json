@@ -34,9 +34,15 @@
         "https://images.fanart.tv/fanart/anti-5654feec7bdc0.jpg",
         "https://images.fanart.tv/fanart/444-5973fdd4999b8.jpg"
       ]
+    },
+    "sources" : {
+      "hasMany" : "Source"
+    },
+    "reviews" : {
+      "hasMany" : "Review"
     }
   },
-  "Sources" : {
+  "Source" : {
     "name" : {
       "string" : [
         "Apple",
@@ -46,9 +52,12 @@
     },
     "url" : {
       "regexp" : "https://open.spotify.com/show/[0-9a-zA-Z]{22}"
+    },
+    "podcast": {
+      "belongsTo": "Podcast"
     }
   },
-  "Reviews" : {
+  "Review" : {
     "id": {
       "int" : {
         "min" : 0,
@@ -72,6 +81,9 @@
     },
     "date" : {
       "regexp" : "([0-9]{1}|1[0-2]))\\/((0|1|2)[0-9]{1})\\/((19|20)[0-9]{2}"
+    },
+    "podcast": {
+      "belongsTo": "Podcast"
     }
   }
 }
